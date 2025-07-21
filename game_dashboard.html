@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politicraft – Dashboard</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="game-dashboard-body"> <div class="container">
+        <header class="page-header">
+            <h1 id="current-gov-name">Your Nation</h1> <div class="tagline">Day: <span id="current-day">1</span></div>
+        </header>
+
+        <section class="metrics-section">
+            <h2>National Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <h3>Citizen Approval/Happiness</h3>
+                    <p id="metric-happiness">--</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Economic Stability/Growth</h3>
+                    <p id="metric-economy">--</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Public Order</h3>
+                    <p id="metric-order">--</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Freedom Index</h3>
+                    <p id="metric-freedom">--</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Treasury</h3>
+                    <p id="metric-treasury">--</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="policies-section">
+            <h2>Policy Adjustments</h2>
+            <div class="form-group">
+                <label for="tax-rate-adjustment">Tax Rate:</label>
+                <select id="tax-rate-adjustment">
+                    <option value="maintain">Maintain Current</option>
+                    <option value="decrease">Decrease Taxes</option>
+                    <option value="increase">Increase Taxes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="public-spending-adjustment">Public Spending:</label>
+                <select id="public-spending-adjustment">
+                    <option value="maintain">Maintain Current</option>
+                    <option value="reduce">Reduce Spending</option>
+                    <option value="increase">Increase Spending</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="regulations-adjustment">Freedom & Regulations:</label>
+                <select id="regulations-adjustment">
+                    <option value="maintain">Maintain Current</option>
+                    <option value="loosen">Loosen Regulations</option>
+                    <option value="tighten">Tighten Regulations</option>
+                </select>
+            </div>
+            <button id="apply-policies-btn" class="cta">Apply Policies</button>
+        </section>
+
+        <section class="dilemma-section" id="dilemma-section" style="display: none;">
+            <h2>Current Dilemma: <span id="dilemma-title"></span></h2>
+            <p id="dilemma-description"></p>
+            <h3>Choose Your Response:</h3>
+            <div id="dilemma-options" class="form-group">
+                </div>
+            <button id="resolve-dilemma-btn" class="cta">Resolve Dilemma</button>
+        </section>
+
+        <section class="event-log-section">
+            <h2>Event Log</h2>
+            <ul id="log-list">
+                </ul>
+        </section>
+        
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+game dashboard  its my mouse pad but no the folder
